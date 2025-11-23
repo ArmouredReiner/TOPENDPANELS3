@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Version 2</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #0b1d39;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .about-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .about-title {
+      background: url('assets/about-header-bg.jpg') center/cover no-repeat;
+      padding: 40px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      box-shadow: 0 0 25px rgba(0,0,0,0.45);
+      
+      font-size: 42px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #4db8ff;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-text {
+      flex: 1 1 450px;
+      font-size: 18px;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+    }
+
+    .about-image {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+  
+    .segmented {
+      border: 2px solid #ff8c42;
+      border-radius: 14px;
+      padding: 40px 25px;
+      margin-bottom: 60px;
+      background: rgba(255,140,66,0.05);
+    }
+
+    .about-title {
+      color: #ff8c42;
+    }
+
+    .segment-image img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 12px;
+      border: 2px solid #ff8c42;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      margin-bottom: 25px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <section class="about-section segmented">
+    <h1 class="about-title">About Our Team</h1>
+
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          At Top End Panels, we take pride in delivering premium collision repairs with a
+          commitment to quality, integrity, and customer care.
+        </p>
+        <p>
+          Our team brings years of combined experience in automotive refinishing,
+          structural repairs, and restoration work. From minor dents to full body repairs,
+          we provide a seamless process from estimation to completion.
+        </p>
+        <p>
+          What sets us apart is our passion for craftsmanship and our dedication to
+          ensuring every vehicle that leaves our workshop meets the highest industry
+          standards.
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="assets/car.avif" alt="Workshop Photo" />
+      </div>
+    </div>
+    
+  <!-- PROCESS: FROM CRASH TO ARRIVAL -->
+  <section class="about-section segmented">
+    <h2 class="about-title">What To Do After a Crash</h2>
+    <div class="segment-image"><img src="assets new photos/Lakeishabroke.jpg" alt="Crash Process Photo" /></div>
+    <div class="about-content">
+      <div class="about-text">
+        <h3> We know how stressful it is to be in a car crash. But dont worry, if you dont know what to do or are uncertain of what steps you should take please contact Top End Panels and we will prepare everything for you. </h3>
+        <p>When you’ve been involved in an accident, having the correct information ready helps speed up the repair and insurance process. But whether you have the information or not we will help you get back on the road</p>
+        <p><strong>If possible you can bring the following:</strong></p>
+        <ul>
+          <li>Your driver’s licence</li>
+          <li>Your vehicle registration</li>
+          <li>The other party’s licence details</li>
+          <li>Their vehicle details (rego, make, model)</li>
+          <li>Any photos or videos of the crash scene and damages</li>
+        </ul>
+        <p>The more information you provide, the faster we can assist in processing your claim.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS: HOW THE REPAIRS WORK -->
+  <!-- PROCESS: HOW THE REPAIRS WORK -->
+<section class="about-section segmented">
+    <h2 class="about-title">Our Repair Process</h2>
+  
+    <!-- Slider -->
+    <div class="repair-slider">
+  
+      <img id="repairImage" src="assets new photos/pull1.JPG" alt="Repair Step">
+  
+      <p id="repairDesc" class="repair-desc">Pulling & Structural Alignment</p>
+  
+      <div class="slider-buttons">
+        <button onclick="prevRepair()">Back</button>
+        <button onclick="nextRepair()">Next</button>
+      </div>
+  
+    </div>
+  
+    <div class="about-content">
+      <div class="about-text">
+        <p>Once your vehicle arrives in our workshop, we follow a detailed and proven repair procedure to ensure your car is restored to factory condition.</p>
+        <ul>
+          <li><strong>Initial Assessment:</strong> We inspect and record all visible and structural damage.</li>
+          <li><strong>Strip Down:</strong> Damaged panels and components are carefully removed.</li>
+          <li><strong>Parts Replacement:</strong> New genuine parts are ordered and fitted.</li>
+          <li><strong>Panel Work:</strong> Structural alignment and gap checks are performed to ensure precision.</li>
+          <li><strong>Painting:</strong> Panels are prepped, masked, and painted in controlled conditions.</li>
+          <li><strong>Reassembly & Finishing:</strong> Everything is refitted with final checks to guarantee a perfect finish.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .repair-slider {
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+    .repair-slider img {
+      width: 90%;
+      max-width: 500px;
+      border-radius: 12px;
+      border: 2px solid #ff8c42;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+  
+    .repair-desc {
+      font-size: 20px;
+      margin-top: 20px;
+      color: #ff8c42;
+      font-weight: 600;
+    }
+  
+    .slider-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .slider-buttons button {
+      padding: 10px 20px;
+      border: 2px solid #ff8c42;
+      background: transparent;
+      color: #ff8c42;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  
+    .slider-buttons button:hover {
+      background: #ff8c42;
+      color: #0b1d39;
+    }
+  </style>
+  
+  <script>
+    const repairSteps = [
+      {
+        img: "assets new photos/pull1.JPG",
+        desc: "Pulling & Structural Alignment"
+      },
+      {
+        img: "assets new photos/paint2.JPG",
+        desc: "Prepping the Panel for Paint/ Sanding and body filler"
+      },
+      {
+        img: "assets new photos/paint7.JPG",
+        desc: "Masking to avoid Overspray"
+      },
+      {
+        img: "assets new photos/paint4.JPG",
+        desc: "Welding new pieces of badly damaged vehicle "
+      },
+      {
+        img: "assets new photos/paint5.JPG",
+        desc: "Isolated Painting"
+      },
+      {
+        img: "assets new photos/paint6.JPG",
+        desc: "Blending the Paint to match the original color"
+      },
+      {
+        img: "assets new photos/paint3.JPG",
+        desc: "All replacement parts are Genuine OEM fixing up your car like brand new. Gaps are lined and even"
+      }
+    ];
+  
+    let currentStep = 0;
+  
+    function showStep() {
+      document.getElementById("repairImage").src = repairSteps[currentStep].img;
+      document.getElementById("repairDesc").innerText = repairSteps[currentStep].desc;
+    }
+  
+    function nextRepair() {
+      currentStep = (currentStep + 1) % repairSteps.length;
+      showStep();
+    }
+  
+    function prevRepair() {
+      currentStep = (currentStep - 1 + repairSteps.length) % repairSteps.length;
+      showStep();
+    }
+  </script>
+  
+
+  <!-- WRITE-OFFS SEGMENT -->
+  <section class="about-section segmented">
+    <h2 class="about-title">Car Hire Assistance</h2>
+    <div class="segment-image"><img src="assets/car-hire.jpg" alt="Car Hire Photo" /></div>
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Not your sorry not your worry </h2>
+        <p>While your vehicle is being repaired, we provide car hire options so you can continue your day-to-day life without interruption.</p>
+        <ul>
+          <li>Replacement cars available for insurance claims</li>
+          <li>Minimal paperwork required</li>
+          <li>Flexible hire duration</li>
+          <li>We liaise directly with insurers</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section segmented"><h2 class="about-title">Car Write-Off Assistance</h2>
+    <div class="segment-image"><img src="assets/fixedhyu1.jpg" alt="Write Off Assistance Photo" /></div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>If your vehicle is classified as a write‑off, we can assist you throughout the entire process.</p>
+        <p>We ensure you receive your <strong>full entitlement</strong> and guide you through the necessary steps so nothing is missed.</p>
+        <p>Our team works directly with insurers and assessors to make the process stress-free and efficient.</p>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+</body>
+</html>
